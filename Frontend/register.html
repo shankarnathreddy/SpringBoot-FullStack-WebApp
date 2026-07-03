@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spicy5 Register</title>
+
+  <link rel="stylesheet" href="register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- BACKGROUND VIDEO -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="../rain.mp4" type="video/mp4">
+  </video>
+  <div class="video-overlay"></div>
+
+  <!-- REGISTER BOX -->
+  <div class="register-container">
+    <div class="logo">🌶️ Spicy5</div>
+    <p class="subtitle">Create Your Account</p>
+
+    <!-- NAME -->
+    <div class="input-box">
+      <i class="fa-solid fa-user"></i>
+      <input type="text" id="fullname" placeholder="Enter Full Name">
+    </div>
+
+    <!-- EMAIL -->
+    <div class="input-box">
+      <i class="fa-solid fa-envelope"></i>
+      <input type="email" id="email" placeholder="Enter Email">
+    </div>
+
+    <!-- PHONE -->
+    <div class="input-box">
+      <i class="fa-solid fa-phone"></i>
+      <input type="tel" id="phone" placeholder="Enter Phone Number">
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="input-box">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" id="password" placeholder="Create Password">
+      <i class="fa-solid fa-eye toggle-password" onclick="togglePassword('password', this)"></i>
+    </div>
+
+    <!-- CONFIRM PASSWORD -->
+    <div class="input-box">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password">
+      <i class="fa-solid fa-eye toggle-password" onclick="togglePassword('confirmPassword', this)"></i>
+    </div>
+
+    <button onclick="register()">Register</button>
+
+    <p class="login-link">
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+  </div>
+  <script src="register.js"></script>
+</body>
+</html>

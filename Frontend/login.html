@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spicy5 Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- BACKGROUND VIDEO -->
+  <video autoplay muted loop playsinline class="bg-video"><source src="../rain.mp4" type="video/mp4"></video>
+  <div class="video-overlay"></div>
+
+  <!-- LOGIN BOX -->
+  <div class="login-container">
+    <div class="logo">🌶️ Spicy5</div>
+    <p class="subtitle">Authentic Homemade Pickles</p>
+
+    <!-- EMAIL -->
+    <div class="input-box">
+      <i class="fa-solid fa-user"></i>
+      <input type="text" id="email" placeholder="Enter Email">
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="input-box">
+      <i class="fa-solid fa-lock"></i>
+      <input type="password" id="password" placeholder="Enter Password">
+      <i class="fa-solid fa-eye toggle-password" onclick="togglePassword(event)"></i>
+    </div>
+
+    <!-- LOGIN BUTTON -->
+    <button id="loginBtn" onclick="login()">Login</button>
+
+    <!-- REGISTER -->
+    <p class="register-link">Don't have an account?
+      <a href="register.html">Register</a>
+    </p>
+
+    <!-- FORGOT PASSWORD -->
+    <p class="forgot-password">
+      <a href="forgot.html">Forgot Password?</a>
+    </p>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

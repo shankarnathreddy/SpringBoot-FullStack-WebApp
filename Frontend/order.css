@@ -1,0 +1,157 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(rgba(255,255,255,0.88),rgba(255,255,255,0.88)),url("../mango.png");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  min-height:100vh;
+  padding:40px 20px;
+}
+.success-container{
+  max-width:950px;
+  margin:auto;
+}
+
+/* SUCCESS BOX */
+.success-box{
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(10px);
+  padding:35px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 4px 14px rgba(0,0,0,0.10);
+  margin-bottom:25px;
+}
+.success-box i{
+  font-size:70px;
+  color:#43a047;
+  margin-bottom:18px;
+}
+.success-box h1{
+  color:#e53935;
+  margin-bottom:10px;
+}
+.success-box p{
+  color:#555;
+  font-size:17px;
+}
+
+/* DETAILS */
+.details-box,
+.order-box{
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(10px);
+  padding:25px;
+  border-radius:18px;
+  margin-bottom:25px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.10);
+}
+.details-box h2,
+.order-box h2{
+  color:#e53935;
+  margin-bottom:20px;
+}
+.detail{
+  display:flex;
+  gap:10px;
+  margin-bottom:12px;
+  flex-wrap:wrap;
+}
+.detail span{
+  font-weight:700;
+  color:#333;
+}
+.detail p{
+  color:#555;
+}
+
+/* ORDER ITEM */
+.order-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#fafafa;
+  padding:15px;
+  border-radius:12px;
+  margin-bottom:15px;
+  border:1px solid #eee;
+  transition:0.3s;
+}
+.order-item:hover{
+  transform:translateY(-3px);
+  box-shadow:0 5px 14px rgba(0,0,0,0.10);
+}
+.left{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+.left img{
+  width:80px;
+  height:80px;
+  object-fit:cover;
+  border-radius:10px;
+}
+.item-details h3{
+  color:#8d1b1b;
+  margin-bottom:6px;
+}
+.item-details p{
+  color:#666;
+}
+.right h2{
+  color:#ff5722;
+}
+
+/* TOTAL */
+.total-box{
+  margin-top:20px;
+  text-align:right;
+  font-size:28px;
+  font-weight:700;
+  color:#e53935;
+}
+
+/* BUTTON */
+.btn-box{
+  text-align:center;
+}
+.home-btn{
+  background:#e53935;
+  color:white;
+  border:none;
+  padding:15px 30px;
+  border-radius:10px;
+  font-size:17px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+.home-btn:hover{
+  background:#c62828;
+  transform:scale(1.05);
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  .order-item{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+  }
+  .right{
+    width:100%;
+    text-align:right;
+  }
+  .total-box{
+    font-size:22px;
+  }
+  .success-box h1{
+    font-size:28px;
+  }
+}

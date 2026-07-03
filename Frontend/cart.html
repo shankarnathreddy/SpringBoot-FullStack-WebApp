@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+  <title>Spicy5 Cart</title>
+  <link rel="stylesheet" href="cart.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fa-solid fa-cart-shopping"></i>Your Cart</h1>
+
+    <!-- CART ITEMS -->
+    <div id="cartItems"></div>
+
+    <!-- EMPTY CART -->
+    <div class="empty-cart" id="emptyCart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <h2>Your Cart is Empty 🌶️</h2>
+      <p>Add delicious pickles to continue shopping</p>
+    </div>
+
+    <!-- TOTAL -->
+    <div class="total-box" id="totalBox">
+      Total : ₹<span id="totalPrice">0</span>
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="btn-box">
+      <button class="shop-btn" onclick="window.location.href='menu.html'">Continue Shopping</button>
+      <button class="shop-btn remove-all-btn" onclick="removeAllItems()">Remove All</button>
+      <button class="shop-btn checkout-btn" id="checkoutBtn" onclick="goToCheckout()">Proceed to Checkout</button>
+    </div>
+</div>
+<script src="cart.js"></script>
+</body>
+</html>

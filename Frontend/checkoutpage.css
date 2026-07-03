@@ -1,0 +1,96 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:'Poppins',sans-serif;
+  background:
+  linear-gradient(rgba(255,255,255,0.80),rgba(255,255,255,0.80)),url("../Sada.jpg");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+.checkout-container{
+  width:100%;
+  max-width:550px;
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(10px);
+  padding:35px;
+  border-radius:18px;
+  box-shadow:0 5px 18px rgba(0,0,0,0.12);
+}
+.checkout-container h1{
+  text-align:center;
+  margin-bottom:30px;
+  color:#e53935;
+}
+.input-box{
+  margin-bottom:22px;
+}
+.input-box label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:600;
+  color:#333;
+}
+.input-box input,
+.input-box textarea,
+.input-box select{
+  width:100%;
+  padding:14px;
+  border:1px solid #ccc;
+  border-radius:10px;
+  font-size:15px;
+  outline:none;
+}
+.input-box textarea{
+  resize:none;
+  height:100px;
+}
+.input-box small{
+  color:red;
+  font-size:13px;
+  margin-top:5px;
+  display:block;
+}
+.place-btn{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:10px;
+  background:#e53935;
+  color:white;
+  font-size:17px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+.place-btn:hover{
+  background:#c62828;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .checkout-container{
+    padding:25px;
+  }
+  .checkout-container h1{
+    font-size:28px;
+  }
+  .input-box input,
+  .input-box textarea,
+  .input-box select{
+    padding:12px;
+    font-size:14px;
+  }
+  .place-btn{
+    font-size:15px;
+    padding:13px;
+  }
+}

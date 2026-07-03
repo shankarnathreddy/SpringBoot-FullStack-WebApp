@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spicy5 Menu</title>
+  <link rel="stylesheet" href="menu.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+<!-- OVERLAY -->
+<div class="video-overlay"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo-section">
+    <img src="../spicy5.jpeg" alt="Spicy5">
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#veg">Veg Pickles</a></li>
+    <li><a href="#nonveg">Non-Veg Pickles</a></li>
+    <li><a href="#podulu">Podulu</a></li>
+  </ul>
+
+  <div class="cart-box">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="cartCount">0</span>
+  </div>
+</nav>
+
+<!-- TOP -->
+<section class="top-section">
+
+  <!-- SEARCH BAR -->
+<div class="search-box">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="text" id="searchInput" placeholder="Search Pickles & Podulu..." onkeyup="searchMenu()">
+</div>
+
+<!-- NO RESULT -->
+<div id="noResults">No Pickle or Podulu Found 😔</div>
+
+<!-- TOAST -->
+<div id="toast">Item Added To Cart</div>
+  <h1>Spicy5 Menu</h1>
+  <p>Homemade Andhra Pickles & Traditional Podulu</p>
+</section>
+
+<!-- VEG PICKLES -->
+
+<section class="menu-section" id="veg">
+  <div class="section-title veg-title">🌿 Veg Pickles</div>
+
+  <div class="menu-container">
+    <div class="menu-card">
+      <img src="../allam.png">
+      <h3>Allam Pickle</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Chintakaya.jpg">
+      <h3>Chintakaya Pickle</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Chinulipaya.webp">
+      <h3>Chinulipaya Pickle</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../gongura.jpg">
+      <h3>Gongora Pickle</h3>
+      <p class="price">₹450</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Kaju & Chinulipaya.jpg">
+      <h3>Kaju & Chinulipaya</h3>
+      <p class="price">₹600</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Kakarkaya.jpg">
+      <h3>Kakarkaya Pickle</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../lemon.jpg">
+      <h3>Lemon Pickle</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../mango.png">
+      <h3>Mango Pickle</h3>
+      <p class="price">₹500</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Munakkaya.png">
+      <h3>Munakkaya Pickle</h3>
+      <p class="price">₹350</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Pandumirchi.webp">
+      <h3>Pandu Mirchi Pickle</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Tomato.jpg">
+      <h3>Tomato Pickle</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Usiri.jpg">
+      <h3>Usiri Pickle</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NON VEG -->
+<section class="menu-section" id="nonveg">
+  <div class="section-title nonveg-title">🍗 Non-Veg Pickles</div>
+
+  <div class="menu-container">
+    <div class="menu-card">
+      <img src="../Bonelesschicken.jpg">
+      <h3>Boneless Chicken</h3>
+      <p class="price">₹1300</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Bonelessmutton.jpg">
+      <h3>Boneless Mutton</h3>
+      <p class="price">₹2200</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Chicken.webp">
+      <h3>Chicken Pickle</h3>
+      <p class="price">₹1100</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../mutton.jpg">
+      <h3>Mutton Pickle</h3>
+      <p class="price">₹2000</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Prawns.jpg">
+      <h3>Prawns Pickle</h3>
+      <p class="price">₹1600</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PODULU -->
+<section class="menu-section" id="podulu">
+  <div class="section-title podi-title">🌶️ Podulu</div>
+
+  <div class="menu-container">
+    <div class="menu-card">
+      <img src="../Karivepaku.webp">
+      <h3>Karivepaku Karam</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Kobbari.webp">
+      <h3>Kobbari Karam</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Munagaku.webp">
+      <h3>Munagaku Karam</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Nalla.jpg">
+      <h3>Nalla Karam</h3>
+      <p class="price">₹400</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Nuvvula.webp">
+      <h3>Nuvvula Karam</h3>
+      <p class="price">₹600</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../Sada.jpg">
+      <h3>Sada Karam</h3>
+      <p class="price">₹500</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="../sambar.jfif">
+      <h3>Sambar Karam</h3>
+      <p class="price">₹600</p>
+
+      <div class="cart-controls">
+        <button onclick="decrease(this)">−</button>
+        <span>0</span>
+        <button onclick="increase(this)">+</button>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="menu.js"></script>
+</body>
+</html>

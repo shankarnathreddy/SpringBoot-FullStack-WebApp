@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+  <title>Order Success</title>
+  <link rel="stylesheet" href="order.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+<div class="success-container">
+
+  <!-- SUCCESS -->
+  <div class="success-box">
+    <i class="fa-solid fa-circle-check"></i>
+    <h1>Order Placed Successfully!</h1>
+    <p>Thank you for ordering from Spicy5</p>
+  </div>
+
+  <!-- CUSTOMER DETAILS -->
+  <div class="details-box">
+    <h2>Delivery Details</h2>
+    <div class="detail">
+      <span>Name :</span>
+      <p id="customerName"></p>
+    </div>
+
+    <div class="detail">
+      <span>Mobile :</span>
+      <p id="customerMobile"></p>
+    </div>
+
+    <div class="detail">
+      <span>State :</span>
+      <p id="customerState"></p>
+    </div>
+
+    <div class="detail">
+      <span>City :</span>
+      <p id="customerCity"></p>
+    </div>
+
+    <div class="detail">
+      <span>Address :</span>
+      <p id="customerAddress"></p>
+    </div>
+
+    <div class="detail">
+      <span>Pincode :</span>
+      <p id="customerPincode"></p>
+    </div>
+  </div>
+
+  <!-- ORDER ITEMS -->
+  <div class="order-box">
+    <h2>Ordered Items</h2>
+    <div id="orderItems"></div>
+
+    <div class="total-box">
+      Total Amount :
+      ₹<span id="totalPrice">0</span>
+    </div>
+  </div>
+
+  <!-- BUTTON -->
+  <div class="btn-box">
+    <button class="home-btn"
+    onclick="goHome()">
+      Back To Home
+    </button>
+  </div>
+</div>
+<script src="order.js"></script>
+</body>
+</html>
